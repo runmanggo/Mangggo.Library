@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/signIn.css" />
+    <link rel="stylesheet" href="./css/fontstyle.css" />
+    <link rel="stylesheet" href="main.html" />
+
+    <title>Manggo.library 로그인</title>
+  </head>
+  <body>
+    <div id="container">
+      <form action="#">
+        <h1>Manggo.library</h1>
+        <div class="item_form1">
+          <input
+            type="text"
+            name="username"
+            id="username-field"
+            class="login-form-field"
+            placeholder="Username"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password-field"
+            class="login-form-field"
+            placeholder="Password"
+          />
+        </div>
+        <div class="item_form2">
+          <a href="#">계정 찾기</a>
+          <button
+            type="submit"
+            value="Login"
+            id="login-form-submit"
+            onclick="moveToMain()"
+          >
+            로그인
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./js/signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #292828;
+  --blue-color: #7db8ff;
+  --red-color: rgb(212, 27, 27);
+  --gray-dark-color: #474646;
+  --grey-light-color: #9b9b9b;
+  /* Size */
+  --padding: 12px;
+  --avatar-size: 36px;
+  /* fonts size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-samll: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SUITE-Regular";
+  padding: 0 5px;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
+}
+
+#container {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+/* header */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+header .logo {
+  font-size: var(--font-large);
+}
+
+header .logo i {
+  color: var(--red-color);
+}
+header .icons .fa-search {
+  margin-right: var(--padding);
+}
+
+.player {
+  display: flex;
+  height: 320px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: var(--gray-dark-color);
+}
+
+body > .info {
+  display: flex;
+  padding: var(--padding);
+}
+
+.info .metadata .hashtags {
+  display: flex;
+  font-size: var(--font-samll);
+  color: var(--blue-color);
+  margin: 4px 0;
+}
+
+.info .metadata .hashtags li {
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton {
+  display: flex;
+}
+.info .metadata .titleAndButton .title {
+  display: block;
+  font-size: var(--font-large);
+  margin-right: var(--padding);
+}
+
+.info > .title {
+  display: inline;
+  word-break: normal;
+}
+
+.info .metadata .titleAndButton .moreBtn {
+  height: 100%;
+}
+
+.info .metadata .titleAndButton .moreBtn.clicked {
+  transform: rotate(180deg);
+  transition: transform 300ms ease-in-out;
+}
+
+.info .metadata .titleAndButton i {
+  background-color: var(--white-color);
+}
+
+.info .views {
+  font-size: var(--font-samll);
+  color: var(--gray-dark-color);
+}
+
+/* action buttons */
+
+.info {
+  width: 40%;
+}
+
+.info .actions {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--padding) 0;
+}
+
+.info .actions li {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info .actions button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-samll);
+  color: var(--gray-dark-color);
+  background-color: var(--white-color);
+  gap: 10px;
+}
+.info .actions button i {
+  margin: 0 auto;
+  /* 아이템들을 중간에 설정할 수 있음 */
+  margin-bottom: calc(var(--padding) / 2);
+  /* 설정한 패딩값을 반만 들어가게 만듬 */
+  font-size: 18px;
+}
+
+.info .actions button i .active {
+  color: var(--blue-color);
+}
+
+/* channel description */
+.channel {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+  padding: 10px 0;
+}
+.channel .metadata {
+  display: flex;
+  align-items: center;
+}
+
+.channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel .metadata img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.channel .metadata .info .name {
+  font-size: var(--font-medium);
+  width: 100px;
+}
+
+.channel .metadata .info .subscribe {
+  font-size: var(--font-samll);
+  color: var(--gray-dark-color);
+}
+.channel .subscribe {
+  text-transform: uppercase;
+  color: var(--red-color);
+  font-size: var(--font-medium);
+  display: inline-block;
+  width: 90px;
+}
+.channel button {
+  border: 1px solid var(--gray-dark-color);
+  background-color: var(--white-color);
+  border-radius: 30px;
+}
+
+/* up next */
+.upNext {
+  padding: 0 var(--padding);
+}
+.upNext > .title {
+  display: block;
+  font-size: var(--font-medium);
+  color: var(--gray-dark-color);
+  margin-bottom: calc(var(--padding) / 2);
+  margin-top:5px ;
+}
+
+.upNext .item {
+  display: flex;
+  margin-top: var(--padding);
+}
+
+.upNext .item .iframe {
+  flex: 1 1 5%;
+  margin-right: var(--padding);
+  overflow: visible;  
+}
+
+.youtube_img{  
+  width: 330px;
+  height: 184px;
+}
+
+.upNext .item .info {
+  flex: 1 1 60%;
+  padding-left: calc(var(--padding) / 2);
+}
+
+.upNext .item .moreBtn {
+  flex: 1 1 5%;
+  background-color: var(--white-color);
+  margin-bottom: 150px;
+}
+
+.upNext .item .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.upNext .item .info .name,
+.upNext .item .info .views {
+  font-size: var(--font-micro);
+  color: var(--gray-dark-color);
+  margin-top: 6px;
+}
+
+.infoAndUpNext {
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .infoAndUpNext {
+    flex-direction: column;
+    margin: var(--padding) 0;
+  }
+  .info {
+    width: 100%;
+    padding: 0 10px;
+  }
+}

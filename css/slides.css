@@ -1,0 +1,16 @@
+.slideShow-wrap-inner {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow: hidden;
+  margin: 20px 40px;
+}
+
+.slideShow-wrap-inner .item img {
+  width: 300px;
+  height: 420px;
+  border-radius: 30px;
+  padding: 10px;
+}
