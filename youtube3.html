@@ -6,14 +6,15 @@
     <script
       src="https://kit.fontawesome.com/370a3b329a.js"
       crossorigin="anonymous"
-    ></script>    
+    ></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fontstyle.css" />
     <link rel="stylesheet" href="./css/youtube.css" />
 
-    <title>Mangtube🎵</title>
+    <title>ᗰᗩᑎGTᑌᗷE</title>
   </head>
   <body>
-    <div id="container">
-      <!-- header -->
+    <div class="container">
       <header>
         <div class="logo">
           <i class="fab fa-youtube"></i>
@@ -24,104 +25,133 @@
           <i class="fas fa-ellipsis-v"></i>
         </div>
       </header>
-      <!-- video Player -->
-      <section class="player">
-        <!-- <video controls src="./video/video.mp4"></video> -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/EilkNydLYOE?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </section>
-      <!-- video info& up nest-->
-      <div class="infoAndUpNext">
-        <!-- video info -->
-        <section class="info">
-          <!-- metadata -->
-          <div class="metadata">
-            <ul class="hashtags">
-              <li>#플레이리스트</li>
+      <div class="wrap">
+        <section class="right_wrap">
+          <article class="player">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EilkNydLYOE?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </article>
+          <article class="info">
+            <div class="metadata">
+              <div class="titleAndButton">
+                <span class="title">[1시간] 이누야샤 OST - 시대를 초월한 마음</span>
+                <button class="moreBtn">
+                  <i class="fas fa-caret-down"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="channel">
+              <div class="channel_right">
+                <div class="metadata">
+                  <img src="./assets/youtube_user (3).jpg" alt="" />
+                  <div class="info">
+                    <span class="name">1hour player</span
+                    ><span class="subscribe">구독자 6.84천명</span>
+                  </div>
+                </div>                
+                <button class="subscribe_btn">구독</button>
+              </div>
+              <div class="all_btn">
+              <div class="channel_left">
+                <button class="thumbs-up_btn">
+                  <i class="fa-regular fa-thumbs-up" style="color: #474646">
+                    <span class="thumbs-up_btn_txt">1.9 만</span></i
+                  >
+                </button>
+                <button class="thumbs-down_btn">
+                  <i
+                    class="fa-regular fa-thumbs-down fa-flip-horizontal"
+                    style="color: #474646"
+                  ></i>
+                </button>
+                <button class="share_btn">
+                  <i class="fas fa-regular fa-share" style="color: #474646">
+                    공유</i
+                  >
+                </button>
+                <button class="download_btn">
+                  <i class="fa-solid fa-arrow-down" style="color: #474646"
+                    >오프라인 저장</i
+                  >
+                </button>
+              </div>
+              </div>
+            </div>
+            <div class="views_big">
+              <ul class="hashtags">
+                <li>조회수 1,253,489회  2018. 6. 22.</li>
+                <li>#플레이리스트</li>
               <li>#동양풍</li>
               <li>#애니</li>
               <li>#이누야샤</li>
-            </ul>
-            <div class="titleAndButton">
-              <span class="title">[1시간] 이누야샤 OST - 시대를 초월한 마음</span>
-              <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
-            </div>
-            <span class="views">조회수 2.1천회  1년 전</span>
-          </div>
-          <!-- actions -->
-          <div class="actions">
-            <li><button class="fas fa-thumbs-up">1K</button></li>
-            <li><button class="fas fa-thumbs-down">0</button></li>
-            <li><button class="fas fa-share">Share</button></li>
-            <li><button class="fas fa-plus">Save</button></li>
-            <li><button class="fab fa-font-awesome-flag">Report</button></li>
-          </div>
-          <div class="channel">
-            <div class="metadata">
-              <img src="./assets/youtube_user (3).jpg" alt="" />
-              <div class="info">
-                <span class="name">1hour player</span
-                ><span class="subscribe">구독자 6.84천명</span>
+              </ul>
+              <div>
+                  <p>
+                [1시간] 이누야샤 OST - 시대를 초월한 마음</BR>
+                문제시 삭제합니다.<br />
+                구독부탁드립니다
+                </p>
               </div>
             </div>
-            <button class="subscribe">구독</button>
-          </div>
+          </article>
         </section>
-        <section class="upNext">
-          <span class="title">추천 영상</span>
-          <ul>
-            <li class="item">
-                <a href="https://youtu.be/W_MUcyXz3r4" target='_blank'>
-                  <iframe class="youtube_img"
-                  src=" https://img.youtube.com/vi/W_MUcyXz3r4/mqdefault.jpg"
-                  frameborder="0"
-                ></iframe>
-              <div class="info">
-                <span class="title"
-                  >[playlist] 들으면 기분 좋아지는 디즈니/픽사 ost 모음 🏰✨</span
-                ></a>
-                <span class="name">슈바미</span>
-                <span class="views">구독자 3.08만명</span>
-              </div>
-              <button class="moreBtn">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </li>
-            <li class="item">
-              <a href="https://youtu.be/8pXX2kZNORA" target='_blank'>
-                <iframe class="youtube_img"
-                src=" https://img.youtube.com/vi/8pXX2kZNORA/mqdefault.jpg"
-                frameborder="0"
-              ></iframe>
-              <div class="info">
-                <span class="title"
-                  >[playlist] 𝘋𝘪𝘴𝘯𝘦𝘺 𝘖𝘚𝘛 1 𝘏𝘰𝘶𝘳 🏰 | 디즈니 OST 모음 | 이 중에 최애곡 하나쯤은 있을걸❔</span
-                ></a>
-                <span class="name">퍼플리셔스ᴘᴜʀᴘʟɪᴄɪᴏᴜs</span>
-                <span class="views">구독자 3.95만명</span>
-              </div>
-              <button class="moreBtn">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </li>
-            <li class="item">
-              <a href="https://youtu.be/aK1kw0RAvNs" target='_blank'>
-                <iframe class="youtube_img"
-                src=" https://img.youtube.com/vi/aK1kw0RAvNs/mqdefault.jpg"
-                frameborder="0"
-              ></iframe>
-              <div class="info">
-                <span class="title"
-                  >[playlist] 주인공 빙의해서 따라 불렀던 뮤지컬영화 ost 띵곡모음✨</span
-                ></a>
-                <span class="name">플레이리스트캔디</span>
-                <span class="views">구독자 9.48천명</span>
-              </div>
-              <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-            </li>
-          </ul>
-        </section>
+        <aside class="left_wrap">
+            <section class="upNext">
+                <span class="title">추천 영상</span>
+                <ul>
+                  <li class="item">
+                      <a href="https://youtu.be/W_MUcyXz3r4" target='_blank'>
+                        <iframe class="youtube_img"
+                        src=" https://img.youtube.com/vi/W_MUcyXz3r4/mqdefault.jpg"
+                        frameborder="0"
+                      ></iframe>
+                    <div class="info">
+                      <span class="title"
+                        >[playlist] 들으면 기분 좋아지는 디즈니/픽사 ost 모음 🏰✨</span
+                      ></a>
+                      <span class="name">슈바미</span>
+                      <span class="views">구독자 3.08만명</span>
+                    </div>
+                    <button class="moreBtn">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </li>
+                  <li class="item">
+                    <a href="https://youtu.be/8pXX2kZNORA" target='_blank'>
+                      <iframe class="youtube_img"
+                      src=" https://img.youtube.com/vi/8pXX2kZNORA/mqdefault.jpg"
+                      frameborder="0"
+                    ></iframe>
+                    <div class="info">
+                      <span class="title"
+                        >[playlist] 𝘋𝘪𝘴𝘯𝘦𝘺 𝘖𝘚𝘛 1 𝘏𝘰𝘶𝘳 🏰 | 디즈니 OST 모음 | 이 중에 최애곡 하나쯤은 있을걸❔</span
+                      ></a>
+                      <span class="name">퍼플리셔스ᴘᴜʀᴘʟɪᴄɪᴏᴜs</span>
+                      <span class="views">구독자 3.95만명</span>
+                    </div>
+                    <button class="moreBtn">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </li>
+                  <li class="item">
+                    <a href="https://youtu.be/aK1kw0RAvNs" target='_blank'>
+                      <iframe class="youtube_img"
+                      src=" https://img.youtube.com/vi/aK1kw0RAvNs/mqdefault.jpg"
+                      frameborder="0"
+                    ></iframe>
+                    <div class="info">
+                      <span class="title"
+                        >[playlist] 주인공 빙의해서 따라 불렀던 뮤지컬영화 ost 띵곡모음✨</span
+                      ></a>
+                      <span class="name">플레이리스트캔디</span>
+                      <span class="views">구독자 9.48천명</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                  </li>
+                </ul>       
+              </section>
+        </aside>
       </div>
     </div>
-    <script src="/js/youtube.js" defer></script>
   </body>
 </html>

@@ -6,14 +6,15 @@
     <script
       src="https://kit.fontawesome.com/370a3b329a.js"
       crossorigin="anonymous"
-    ></script>    
+    ></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fontstyle.css" />
     <link rel="stylesheet" href="./css/youtube.css" />
 
-    <title>Mangtube🎵</title>
+    <title>ᗰᗩᑎGTᑌᗷE</title>
   </head>
   <body>
-    <div id="container">
-      <!-- header -->
+    <div class="container">
       <header>
         <div class="logo">
           <i class="fab fa-youtube"></i>
@@ -24,107 +25,140 @@
           <i class="fas fa-ellipsis-v"></i>
         </div>
       </header>
-      <!-- video Player -->
-      <section class="player">
-        <!-- <video controls src="./video/video.mp4"></video> -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2zR7YuAD0t4?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </section>
-      <!-- video info& up nest-->
-      <div class="infoAndUpNext">
-        <!-- video info -->
-        <section class="info">
-          <!-- metadata -->
-          <div class="metadata">
-            <ul class="hashtags">
-              <li>#플레이리스트</li>
+      <div class="wrap">
+        <section class="right_wrap">
+          <article class="player">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2zR7YuAD0t4?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </article>
+          <article class="info">
+            <div class="metadata">
+              <div class="titleAndButton">
+                <span class="title">MV | 민니 ((여자)아이들) MINNIE ((G)I-DLE) - In The Novel | 모든 게 착각이었다 OST Part 2</span>
+                <button class="moreBtn">
+                  <i class="fas fa-caret-down"></i>
+                </button>
+              </div>
+            </div>
+            <!-- actions -->
+
+            <div class="channel">
+              <div class="channel_right">
+                <div class="metadata">
+                  <img src="./assets/youtube_user (4).jpg" alt="" />
+                  <div class="info">
+                    <span class="name">DanalEntertainment</span
+                    ><span class="subscribe">구독자 97만명</span>
+                  </div>
+                </div>                
+                <button class="subscribe_btn">구독</button>
+              </div>
+              <div class="all_btn">
+              <div class="channel_left">
+                <button class="thumbs-up_btn">
+                  <i class="fa-regular fa-thumbs-up" style="color: #474646">
+                    <span class="thumbs-up_btn_txt">2.8 만</span></i
+                  >
+                </button>
+                <button class="thumbs-down_btn">
+                  <i
+                    class="fa-regular fa-thumbs-down fa-flip-horizontal"
+                    style="color: #474646"
+                  ></i>
+                </button>
+                <button class="share_btn">
+                  <i class="fas fa-regular fa-share" style="color: #474646">
+                    공유</i
+                  >
+                </button>
+                <button class="download_btn">
+                  <i class="fa-solid fa-arrow-down" style="color: #474646"
+                    >오프라인 저장</i
+                  >
+                </button>
+              </div>
+              </div>
+            </div>
+            <div class="views_big">
+              <ul class="hashtags">
+                <li>조회수 124만회  5개월 전</li>
+                <li>#플레이리스트</li>
               <li>#로맨스 판타지</li>
               <li>#카카오페이지</li>
               <li>#모든 게 착각이었다</li>
-            </ul>
-            <div class="titleAndButton">
-              <span class="title">MV | 민니 ((여자)아이들) MINNIE ((G)I-DLE) - In The Novel | 모든 게 착각이었다 OST Part 2</span>
-              <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
-            </div>
-            <span class="views">조회수 124만회  5개월 전</span>
-          </div>
-          <!-- actions -->
-          <div class="actions">
-            <li><button class="fas fa-thumbs-up">1K</button></li>
-            <li><button class="fas fa-thumbs-down">0</button></li>
-            <li><button class="fas fa-share">Share</button></li>
-            <li><button class="fas fa-plus">Save</button></li>
-            <li><button class="fab fa-font-awesome-flag">Report</button></li>
-          </div>
-          <div class="channel">
-            <div class="metadata">
-              <img src="./assets/youtube_user (4).jpg" alt="" />
-              <div class="info">
-                <span class="name">
-                  DanalEntertainment
-                  </span
-                ><span class="subscribe">구독자 97만명</span>
+              </ul>
+              <div>                
+                <p>                 
+                🎤 Artist : 민니 ((여자)아이들)<br />
+                🎵 Song : In The Novel<br />
+                👉 Album : 모든 게 착각이었다 OST Part 2<br />
+                탄탄한 서사와 숨 막히는 반전으로 주목받은 <br />
+                “착각계의 레전설” 〈모든 게 착각이었다〉의 오리지널 사운드트랙 두 번째 곡이 공개된다.<br />
+                (여자)아이들 멤버 민니가 참여한 두 번째 곡 ‘In The Novel’은 여주인공 두루아 발로즈를 테마로 제작한 곡으로,<br />
+                민니의 몽환적인 보컬 사운드와 리드미컬한 비트가 하모니를 이루며<br />
+                듣는 이들을 소설 속 주인공의 꿈결 같으며 아리송하기도 한 마음 속으로 초대한다
+                </p>
               </div>
             </div>
-            <button class="subscribe">구독</button>
-          </div>
+          </article>
         </section>
-        <section class="upNext">
-          <span class="title">추천 영상</span>
-          <ul>
-            <li class="item">
-                <a href="https://youtu.be/BMK5tCzAoDk" target='_blank'>
-                  <iframe class="youtube_img"
-                  src=" https://img.youtube.com/vi/BMK5tCzAoDk/mqdefault.jpg"
-                  frameborder="0"
-                ></iframe>
-              <div class="info">
-                <span class="title"
-                  >MV I 려욱 (RYEOWOOK) - 사랑이 마음 곁에 남아 (Goodbye) | 모든 게 착각이었다 OST Part 1</span
-                ></a>
-                <span class="name">DanalEntertainment</span>
-                <span class="views">구독자 97만명</span>
-              </div>
-              <button class="moreBtn">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </li>
-            <li class="item">
-              <a href="https://youtu.be/HbymID977zk" target='_blank'>
-                <iframe class="youtube_img"
-                src=" https://img.youtube.com/vi/HbymID977zk/mqdefault.jpg"
-                frameborder="0"
-              ></iframe>
-              <div class="info">
-                <span class="title"
-                  >[MV] AleXa(알렉사) _ Midnight Sun(백야) (카카오 웹툰 '이 결혼은 어차피 망하게 되어있다' OST Part.1)</span
-                ></a>
-                <span class="name">1theK (원더케이)
-                </span>
-                <span class="views">구독자 2450만명</span>
-              </div>
-              <button class="moreBtn">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </li>
-            <li class="item">
-              <a href="https://youtu.be/2I9VyfTRg_Y" target='_blank'>
-                <iframe class="youtube_img"
-                src=" https://img.youtube.com/vi/2I9VyfTRg_Y/mqdefault.jpg"
-                frameborder="0"
-              ></iframe>
-              <div class="info">
-                <span class="title"
-                  >낮에 뜨는 달 OST 모음 1~5 (가사포함) | The Moon during the Day OST Playlist 1~5 (Korean Lyrics)</span
-                ></a>
-                <span class="name">밤공원</span>
-                <span class="views">구독자 13.9천명</span>
-              </div>
-              <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-            </li>
-          </ul>
-        </section>
+        <aside class="left_wrap">
+            <section class="upNext">
+                <span class="title">추천 영상</span>
+                <ul>
+                  <li class="item">
+                      <a href="https://youtu.be/BMK5tCzAoDk" target='_blank'>
+                        <iframe class="youtube_img"
+                        src=" https://img.youtube.com/vi/BMK5tCzAoDk/mqdefault.jpg"
+                        frameborder="0"
+                      ></iframe>
+                    <div class="info">
+                      <span class="title"
+                        >MV I 려욱 (RYEOWOOK) - 사랑이 마음 곁에 남아 (Goodbye) | 모든 게 착각이었다 OST Part 1</span
+                      ></a>
+                      <span class="name">DanalEntertainment</span>
+                      <span class="views">구독자 97만명</span>
+                    </div>
+                    <button class="moreBtn">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </li>
+                  <li class="item">
+                    <a href="https://youtu.be/HbymID977zk" target='_blank'>
+                      <iframe class="youtube_img"
+                      src=" https://img.youtube.com/vi/HbymID977zk/mqdefault.jpg"
+                      frameborder="0"
+                    ></iframe>
+                    <div class="info">
+                      <span class="title"
+                        >[MV] AleXa(알렉사) _ Midnight Sun(백야) (카카오 웹툰 '이 결혼은 어차피 망하게 되어있다' OST Part.1)</span
+                      ></a>
+                      <span class="name">1theK (원더케이)
+                      </span>
+                      <span class="views">구독자 2450만명</span>
+                    </div>
+                    <button class="moreBtn">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </li>
+                  <li class="item">
+                    <a href="https://youtu.be/2I9VyfTRg_Y" target='_blank'>
+                      <iframe class="youtube_img"
+                      src=" https://img.youtube.com/vi/2I9VyfTRg_Y/mqdefault.jpg"
+                      frameborder="0"
+                    ></iframe>
+                    <div class="info">
+                      <span class="title"
+                        >낮에 뜨는 달 OST 모음 1~5 (가사포함) | The Moon during the Day OST Playlist 1~5 (Korean Lyrics)</span
+                      ></a>
+                      <span class="name">밤공원</span>
+                      <span class="views">구독자 13.9천명</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                  </li>
+                </ul>       
+              </section>
+        </aside>
       </div>
     </div>
-    <script src="/js/youtube.js" defer></script>
   </body>
 </html>

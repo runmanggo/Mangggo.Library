@@ -6,14 +6,15 @@
     <script
       src="https://kit.fontawesome.com/370a3b329a.js"
       crossorigin="anonymous"
-    ></script>    
+    ></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fontstyle.css" />
     <link rel="stylesheet" href="./css/youtube.css" />
 
-    <title>Mangtube🎵</title>
+    <title>ᗰᗩᑎGTᑌᗷE</title>
   </head>
   <body>
-    <div id="container">
-      <!-- header -->
+    <div class="container">
       <header>
         <div class="logo">
           <i class="fab fa-youtube"></i>
@@ -24,114 +25,153 @@
           <i class="fas fa-ellipsis-v"></i>
         </div>
       </header>
-      <!-- video Player -->
-      <section class="player">
-        <!-- <video controls src="./video/video.mp4"></video> -->
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Eb_-b2QKPBw?autoplay=1"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </section>
-      <!-- video info& up nest-->
-      <div class="infoAndUpNext">
-        <!-- video info -->
-        <section class="info">
-          <!-- metadata -->
-          <div class="metadata">
-            <ul class="hashtags">
-              <li>#플레이리스트</li>
-              <li>#판타지</li>
-              <li>#서양판타지</li>              
-            </ul>
-            <div class="titleAndButton">
-              <span class="title">𝐩𝐥𝐚𝐲𝐥𝐢𝐬𝐭 | 서양 판타지 음악 모음</span>
-              <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
-            </div>
-            <span class="views">1M views 1 month ago</span>
-          </div>
-          <!-- actions -->
-          <div class="actions">
-            <li><button class="fas fa-thumbs-up">1K</button></li>
-            <li><button class="fas fa-thumbs-down">0</button></li>
-            <li><button class="fas fa-share">Share</button></li>
-            <li><button class="fas fa-plus">Save</button></li>
-            <li><button class="fab fa-font-awesome-flag">Report</button></li>
-          </div>
-          <div class="channel">
+      <div class="wrap">
+        <section class="right_wrap">
+          <article class="player">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Eb_-b2QKPBw?autoplay=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+          <article class="info">
             <div class="metadata">
-              <img src="./assets/youtube_user (1).jpg" alt="" />
-              <div class="info">
-                <span class="name">찬사</span
-                ><span class="subscribe">구독자 8.6 만명</span>
+              <div class="titleAndButton">
+                <span class="title">𝐩𝐥𝐚𝐲𝐥𝐢𝐬𝐭 | 서양 판타지 음악 모음</span>
+                <button class="moreBtn">
+                  <i class="fas fa-caret-down"></i>
+                </button>
               </div>
             </div>
-            <button class="subscribe">구독</button>
-          </div>
+            <!-- actions -->
+
+            <div class="channel">
+              <div class="channel_right">
+                <div class="metadata">
+                  <img src="./assets/youtube_user (1).jpg" alt="" />
+                    <div class="info">
+                    <span class="name">찬사</span
+                    ><span class="subscribe">구독자 8.6 만명</span>
+                  </div>
+                </div>                
+                <button class="subscribe_btn">구독</button></div>
+
+              <div class="all_btn">
+              <div class="channel_left">
+                <button class="thumbs-up_btn">
+                  <i class="fa-regular fa-thumbs-up" style="color: #474646">
+                    <span class="thumbs-up_btn_txt">1.8 만</span></i
+                  >
+                </button>
+                <button class="thumbs-down_btn">
+                  <i
+                    class="fa-regular fa-thumbs-down fa-flip-horizontal"
+                    style="color: #474646"
+                  ></i>
+                </button>
+                <button class="share_btn">
+                  <i class="fas fa-regular fa-share" style="color: #474646">
+                    공유</i
+                  >
+                </button>
+                <button class="download_btn">
+                  <i class="fa-solid fa-arrow-down" style="color: #474646"
+                    >오프라인 저장</i
+                  >
+                </button>
+              </div>
+              </div>
+            </div>
+            <div class="views_big">
+              <ul class="hashtags">
+                <li>조회수 46만회 2년 전</li>
+                <li>#플레이리스트</li>
+                <li>#판타지</li>
+                <li>#서양판타지</li>
+              </ul>
+              <div>
+                🕊💐🌷
+                <p>
+                  00:00 Let’s look ahead!<br />
+                  01:50 The message from the past<br />
+                  04:14 Close Aides<br />
+                  05:43 Obstinancy:Confidence<br />
+                  06:40 Because Ragtime Told Me To<br />
+                  07:04 Punch-Drunk Melody<br />
+                  08:48 Cradle Waltz<br />
+                  11:17 Merry Go Round Of Life (Remastered)<br />
+                  14:50 Romantic Sunset<br />
+                  16:31 The Tune Of The Azure Light (Orchestra Ver.)
+                </p>
+              </div>
+            </div>
+          </article>
         </section>
-        <section class="upNext">
-          <span class="title">추천 영상</span>
-          <ul>
-            <li class="item">
-              <a href="https://youtu.be/bHvT0SNITuU" target='_blank'>
-                <iframe class="youtube_img"
-                src=" https://img.youtube.com/vi/bHvT0SNITuU/mqdefault.jpg"
-                frameborder="0"
-              ></iframe>
-              <div class="info">
-                <span class="title"
-                  >[1H]🎧🌿비내리는 어느 타동숲 마을로🚖🌧♬♪ 【1Ｈ】ㅣ게임음악,
-                  노동요, 집중 음악</span
-                ></a>
-                <span class="name">루피 loopi</span>
-                <span class="views">구독자 1.13 만명</span>
-              </div>
-              <button class="moreBtn">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </li>
-            <li class="item">
-              <a href="https://youtu.be/gjVzBRE1hKI" target='_blank'>
-                <iframe class="youtube_img"
-                src=" https://img.youtube.com/vi/gjVzBRE1hKI/mqdefault.jpg"
-                frameborder="0"
-              ></iframe>
-              <div class="info">
-                <span class="title"
-                  >마스터의 카페 비둘기둥지에서 1시간| ACNH Cafe BGM
-                  1hour☕</span
-                ></a>
-                <span class="name">강쿨</span>
-                <span class="views">구독자 2.05천명</span>
-              </div>
-              <button class="moreBtn">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </li>
-            <li class="item">
-              <a href="https://youtu.be/mvQHqxmdYV0" target='_blank'>
-                <iframe class="youtube_img"
-                src=" https://img.youtube.com/vi/mvQHqxmdYV0/mqdefault.jpg"
-                frameborder="0"
-              ></iframe>
-              <div class="info">
-                <span class="title"
-                  >2 시간 지브리 여름 🎨 일, 공부, 휴식을위한 지브리 피아노
-                  BGM</span
-                ></a>
-                <span class="name">Ghibli Music</span>
-                <span class="views">구독자 1.66만명</span>
-              </div>
-              <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-            </li>
-          </ul>
-        </section>
+        <aside class="left_wrap">
+            <section class="upNext">
+                <span class="title">추천 영상</span>
+                <ul>
+                  <li class="item">
+                    <a href="https://youtu.be/bHvT0SNITuU" target='_blank'>
+                      <iframe class="youtube_img"
+                      src=" https://img.youtube.com/vi/bHvT0SNITuU/mqdefault.jpg"
+                      frameborder="0"
+                    ></iframe>
+                    <div class="info">
+                      <span class="title_player"
+                        >[1H]🎧🌿비내리는 어느 타동숲 마을로🚖🌧♬♪ 【1Ｈ】ㅣ게임음악,
+                        노동요, 집중 음악</span
+                      ></a>
+                      <span class="name">루피 loopi</span>
+                      <span class="views">구독자 1.13 만명</span>
+                    </div>
+                    <button class="moreBtn">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </li>
+                  
+                  <li class="item">
+                    <a href="https://youtu.be/gjVzBRE1hKI" target='_blank'>
+                      <iframe class="youtube_img"
+                      src=" https://img.youtube.com/vi/gjVzBRE1hKI/mqdefault.jpg"
+                      frameborder="0"
+                    ></iframe>
+                    <div class="info">
+                      <span class="title_player"
+                        >마스터의 카페 비둘기둥지에서 1시간| ACNH Cafe BGM
+                        1hour☕</span
+                      ></a>
+                      <span class="name">강쿨</span>
+                      <span class="views">구독자 2.05천명</span>
+                    </div>
+                    <button class="moreBtn">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </li>
+                  <li class="item">
+                    <a href="https://youtu.be/mvQHqxmdYV0" target='_blank'>
+                      <iframe class="youtube_img"
+                      src=" https://img.youtube.com/vi/mvQHqxmdYV0/mqdefault.jpg"
+                      frameborder="0"
+                    ></iframe>
+                    <div class="info">
+                      <span class="title_player"
+                        >2 시간 지브리 여름 🎨 일, 공부, 휴식을위한 지브리 피아노
+                        BGM</span
+                      ></a>
+                      <span class="name">Ghibli Music</span>
+                      <span class="views">구독자 1.66만명</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                  </li>
+                </ul>       
+              </section>
+        </aside>
       </div>
     </div>
-    <script src="/js/youtube.js" defer></script>
   </body>
 </html>
